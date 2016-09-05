@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/restaurant_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="256dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src="@android:drawable/gallery_thumb"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:textColor="@android:color/white"
+        android:background="#66000000"
+        android:padding="4dp"
+        android:ellipsize="end"
+        tools:text="ImageLabel"/>
+</FrameLayout>

@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${ANDROID_BUILD_TOOLS_GRADLE_VERSION}"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+ext {
+
+    libraries = [
+            android_support          : [
+                    "com.android.support:appcompat-v7:${SUPPORT_LIBS_VERSION}",
+                    "com.android.support:design:${SUPPORT_LIBS_VERSION}"
+            ],
+            jackson                  : [
+                    "com.fasterxml.jackson.core:jackson-core:${JACKSON_VERSION}",
+                    "com.fasterxml.jackson.core:jackson-databind:${JACKSON_VERSION}",
+                    "com.fasterxml.jackson.core:jackson-annotations:${JACKSON_VERSION}"
+            ],
+            volley                   :  "com.android.volley:volley:${VOLLEY_VERSION}",
+            glide                    : "com.github.bumptech.glide:glide:${GLIDE_VERSION}",
+            maps                     : "com.google.android.gms:play-services-maps:${PLAY_SERVICES_VERSION}",
+            unit_tests               : [
+                    "junit:junit:${JUNIT_VERSION}",
+            ],
+    ]
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

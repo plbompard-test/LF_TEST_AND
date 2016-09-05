@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exploration</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action_favorite">Ajouter aux favoris</string>
+    <string name="action_share">Partager</string>
+
+    <string name="loading_msg">Chargement</string>
+    <string name="map">"Plan"</string>
+
+
+</resources>

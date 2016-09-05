@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#159866</color>
+    <color name="colorPrimaryDark">#156846</color>
+    <color name="colorAccent">#159866</color>
+
+    <color name="item_ripple">#d4d4d6</color>
+
+    <color name="transparent_black">#AA000000</color>
+    <color name="teal">#28ABAA</color>
+    <color name="teal_pressed">#189B8A</color>
+</resources>
